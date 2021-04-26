@@ -6,4 +6,5 @@ public interface PlayerControl {
 
 
     Integer movePlayer(Player p, Integer jumps);
+    void doSpecialFieldAction(EngineData enginData, Player p);
 }

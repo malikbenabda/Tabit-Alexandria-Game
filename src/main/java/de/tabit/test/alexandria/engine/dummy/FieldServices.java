@@ -18,6 +18,7 @@ public class FieldServices implements PlayerControl {
         return Stream.generate(BonusField::new).limit(bonusNum).collect(Collectors.toList());
     }
 
+    @Override
     public void doSpecialFieldAction(EngineData enginData, Player p) {
         Field currentField = enginData.fields.get(p.getPosition());
         if (currentField instanceof TrapField) {
