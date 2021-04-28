@@ -1,13 +1,11 @@
 package de.tabit.test.alexandria.entity;
 
-import de.tabit.test.alexandria.engine.dummy.PlayerControl;
-
 public class Player {
 
-    String name = "Player_";
-    Integer position = 0;
+    String name = "Player ";
+    Integer position = -1;
     Boolean hasJoker = Boolean.FALSE;
-    Boolean curedSkip = Boolean.FALSE;
+    Boolean mustSkip = Boolean.FALSE;
 
     public Player(String name) {
         this.name += name;
@@ -37,11 +35,11 @@ public class Player {
         this.name = name;
     }
 
-    public Boolean getCuredSkip() {
-        return curedSkip;
+    public Boolean getMustSkip() {
+        return mustSkip;
     }
 
-    public void setCuredSkip(Boolean curedSkip) {
-        this.curedSkip = curedSkip;
+    public void setMustSkip(Boolean mustSkip) {
+        this.mustSkip = mustSkip;
     }
 }
